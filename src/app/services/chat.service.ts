@@ -13,7 +13,7 @@ export class ChatService {
     const payload = { 
       de: this.wsService.getUsuario().nombre,
       cuerpo: mensaje,
-      color: 'blue'
+      color: 'yellow'
     };
     this.wsService.emit('mensaje', payload);
   }
